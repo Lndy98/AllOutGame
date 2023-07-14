@@ -1,0 +1,59 @@
+#app {
+    width: 1025px;
+    height: 650px;
+    border: 2px solid ;
+    border-radius: 10px;
+    background: #130831;
+
+}
+.bg{
+    display: inline-block;
+    margin: 25px;
+    height: 600px;
+    background: #4b8cc4;
+    border-radius: 10px;
+    position: absolute;
+}
+#controller{
+    width: 300px;
+
+}
+#game{
+    width: 600px;
+    left: 375px;
+}
+.button {
+    padding: 10px;
+    background-color: #130831;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+}
+select{
+
+    width: 97%;
+}
+.info{
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+    background-color: #130831;
+    border-radius: 10px;
+    margin: 5px;
+    color: white;
+    text-align: center;
+    width: 50px;
+}
+#time{
+    left:435px;
+}
+
+
+table{
+    width: 100%;
+}
+table, th, td {
+    border: 1px solid;
+}

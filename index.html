@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Out</title>
+    <link rel="stylesheet" href="style.css" >
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="script.js"></script>
+    <script src="levels.js"></script>
+    <script src="timer.js"></script>
+    <script src="rankList.js"></script>
+</head>
+<body>
+<div id="app">
+    <div id="controller" class="bg">
+        <select id="level" class="button" onchange="setLevel()">
+            <option value="level1">Level 1</option>
+            <option value="level2">Level 2</option>
+            <option value="level3">Level 3</option>
+        </select>
+        <div id="stop" class="button" onclick="stopTimer()" >Stop</div>
+        <div id="start" class="button" onclick="startGame()" >Start</div>
+        <div id="show" class="button" onclick="restartGame()">Restart</div>
+        <div class="button">
+            <h3>Rang lista</h3>
+            <div id="rankList"></div>
+            <form class="button">
+                <input type="text" id="nev" placeholder="Írja be a nevét...">
+                <button type="button" onclick="addGamerToRankList()">Hozzáadás</button>
+            </form>
+        </div>
+    </div>
+    <div id="game" class="bg">
+        <div id="info">
+            <div id="steps" class="info"></div>
+            <div id="time" class="info">
+                <span id="minutes">00</span>:<span id="seconds">00</span>
+            </div>
+        </div>
+        <div id="gameArea"></div>
+
+        </div>
+
+</div>
+
+
+</body>
+</html>
